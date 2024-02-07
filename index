@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Habit Tracker</h1>
+    <form id="habit-form">
+        <label for="habit-name">Habit Name:</label>
+        <input type="text" id="habit-name" name="habit-name" required>
+        <label for="habit-type">Habit Type:</label>
+        <select id="habit-type" name="habit-type" required>
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+        <button type="submit">Add Habit</button>
+    </form>
+    <div id="habit-list">
+        <!-- Habits will be displayed here -->
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
